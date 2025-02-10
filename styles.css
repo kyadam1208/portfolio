@@ -1,0 +1,138 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+  }
+  
+  /* En-tête */
+  header {
+    background-color: #115915;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    list-style-type: none;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #4CAF50;
+  }
+  
+  /* Section À propos */
+  #apropos {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  #photo-profil {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 20px;
+  }
+  
+  #apropos h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  #apropos p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Section Ma passion */
+  #mapassion {
+    text-align: center;
+    padding: 40px;
+    background-color: #f0f0f0;
+  }
+  
+  #mapassion h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  #mapassion p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  #mapassion button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  #mapassion button:hover {
+    background-color: #053107;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    #photo-profil {
+      width: 120px;
+      height: 120px;
+    }
+  
+    #apropos h2, #mapassion h2 {
+      font-size: 1.8rem;
+    }
+  
+    #apropos p, #mapassion p {
+      font-size: 1rem;
+    }
+  
+    #mapassion button {
+      font-size: 1.2rem;
+    }
+  }
